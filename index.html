@@ -8,21 +8,32 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
-  <title>Rich Man's Tweddit</title>
+  <title>Rich Man's Reddit</title>
 </head>
 
 <body ng-app="myMod">
   <header>
     <div class="container-fluid clearfix" id="header">
-
-     <!-- <img src=06ebb4a790a78bd8d6133c44c20905fd_400x400.png class="logo"> -->
-           <h1>Rich Man's Tweddit</h1>
-
+           <h1>Rich Man's Reddit</h1>
     </div>
-</header>
+  </header>
 
     <div class="container" id="content" ng-controller="getReddit">
-      {{pulledData}}
+      <div class="row" ng-repeat="post in posts">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4">
+          <div class="post">
+            <h4>{{post.data.title}}</h4>
+            <h6>{{post.data.author}}</h6>
+            <img class="img-responsive" src="{{post.data.preview.images[0].source.url}}">
+          </div>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+      </div>
     </div>
 
 

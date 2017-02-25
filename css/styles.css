@@ -4,11 +4,6 @@
   color: white;
 
 }
-
-img {
-    height: 300px;
-    width: 300px;
-}
 .post {
     background-color: white;
     border: 1px solid black;
@@ -16,16 +11,10 @@ img {
     padding: 15px;
     margin: 15px;
     box-shadow: 5px 5px 5px grey;
-    max-width: 50%;
 }
 .title {
     font-family: sans-serif;
 }
-
-body {
-    /*background-image: url("../confectionary.png");*/
-}
-
 
 h1 {
     display: inline-block;
@@ -37,7 +26,6 @@ h1 {
     display: inline-block;
 }
 .tweddit {
-
     width: 35%;
     height: 35%;
 
