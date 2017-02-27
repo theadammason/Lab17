@@ -13,5 +13,5 @@ app.controller('getReddit', function($scope, $http) {
             console.log(error);
         });
     };
-  getData();
+    getData();
 });
